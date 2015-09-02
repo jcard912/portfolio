@@ -1,0 +1,292 @@
+html body * {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	width: 100%;
+}
+
+.nav-bar {
+	position: fixed;
+	background-color: #FFFFFF;
+	width: 100%;
+	z-index: 99999;
+}
+
+.nav-bar .nav-content {
+	/*border: 1px solid;*/
+	height: 10rem;
+	width: 120rem;
+	margin: 0 auto;
+}
+
+#logo {
+	height: 4rem;
+	float: left;
+	margin-top: 3rem;
+}
+
+#logo:hover{
+	-webkit-animation: pulse 1s infinite;
+	-moz-animation: pulse 1s infinite;
+	-o-animation: pulse 1s infinite;
+	animation: pulse 1s infinite;
+}
+
+.menu {
+	position: relative;
+	display:  inline-block;
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-top: 3rem;
+}
+
+/*--Navicon--*/
+.menu span {
+	margin: 0 auto;
+	position: relative;
+	top: 12px;
+}
+.menu span:before, .menu span:after {
+	position: absolute;
+	content: '';
+}
+.menu span, .menu span:before, .menu span:after {
+	width: 30px;
+	height: 6px;
+	background-color: #000;
+	display: block;
+}
+.menu span:before {
+	margin-top: -12px;
+}
+.menu span:after {
+	margin-top: 12px;
+}
+
+.navicon {
+  -webkit-transform: rotate(0deg); transform: rotate(0deg);
+	-webkit-transition: 0.2s ease; transition: 0.2s ease;
+}
+
+.navi-click span {
+	-webkit-transition-duration: 0s; transition-duration: 0s;
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.navi-click:hover span {
+	background-color: rgba(0,0,0,0.0);
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.navi-click span:before {
+	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.navi-click:hover span:before {
+	margin-top: 0;
+	-webkit-transform: rotate(45deg); transform: rotate(45deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+.navi-click span:after {
+	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.navi-click:hover span:after {
+	margin-top: 0;
+	-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+
+/*--Side Nav Slider--*/
+.side-nav {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 15rem;
+	font-size: 4rem;
+	letter-spacing: 5px;
+	font-weight: 300;
+	display: none;
+}
+
+.side-nav .content ul li {
+	padding: 2rem;
+}
+
+
+/*--Main Jumbotron Section / About Me--*/
+.main {
+	height: 105rem; 
+	-webkit-transform: skewY(5deg);
+	-moz-transform: skewY(5deg);
+	transform: skewY(5deg);
+}
+
+.main .main-content {
+	width: 120rem;
+	margin: 0 auto;
+}
+
+.main .main-content #jamesHead {
+	width: 75rem;
+	position: absolute;
+	bottom: 0;
+}
+
+.main .main-content .about {
+	width: 60rem;
+	float: right;
+	margin-top: 15rem;
+	color: #EEEEEE;
+	-webkit-transform: skewY(-5deg);
+	-moz-transform: skewY(-5deg);
+	transform: skewY(-5deg);
+}
+
+h3 {
+	font-size: 4rem;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
+
+.about h4 {
+	font-size: 3.5rem;
+	font-weight: 300;
+	letter-spacing: 3px;
+	margin-top: 5rem;
+}
+
+.about h5 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 3px;
+	margin-top: 2rem;
+}
+
+.about p {
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	margin-top: 10rem;
+}
+
+/*--Projects Section--*/
+
+.projects {
+	margin-top: 15rem;
+	text-align: center;
+}
+
+.projects-container .row1 {
+	height: 300px;
+}
+
+.project {
+	margin: 5rem auto;
+	width: 40rem;
+	max-width: 40rem;
+	height: 40rem;
+	position: relative;
+}
+
+.p-desc {
+	background-color: #000000;
+	color: #EEEEEE;
+	height: 10rem;
+	width: inherit;
+	padding: 1rem;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+
+.project img {
+	width: inherit;
+}
+
+.row-centered {
+	display: inline-block;
+}
+
+#project1 {
+	background-color: #000000;
+	padding-top: 8rem;
+}
+
+#project2 {
+	background-color: #00CCFF;
+}
+
+#project3 {
+	background-color: #F5F5F5;
+}
+
+#project4 {
+	background-color: #FFE8D1;
+	padding-top: 10rem;
+}
+
+/*--Contact Section--*/
+.contact {
+	background-color: #000000;
+	height: 40rem;
+	width: 100%;
+	text-align: center;
+}
+
+.contact .contact-container {
+	width: inherit;
+	margin: 0 auto;
+	color: #EEEEEE;
+}
+
+.contact-container .contact-icons {
+	font-size: 5rem;
+	margin-top: 10rem;
+}
+
+#github {
+	color: #bd2c00;
+}
+
+#twitter {
+	color: #55acee;
+}
+
+#instagram {
+	color: #34729b;	
+}
+
+#email {
+	color: #FFFF00;
+}
+
+/*--Footer--*/
+footer {
+	background-color:#000000;
+	width: inherit;
+	color: #EEEEEE;
+	text-align: center;
+}
+
+
+
+/*--Animations--*/
+.slideIn{
+	-webkit-animation: slideInLeft 2s;
+	-moz-animation: slideInLeft 2s;
+	-o-animation: slideInLeft 2s;
+	animation: slideInLeft 2s;
+}
+
+.slideOut{
+	-webkit-animation: slideOutLeft 2s;
+	-moz-animation: slideOutLeft 2s;
+	-o-animation: slideOutLeft 2s;
+	animation: slideOutLeft 2s;
+}

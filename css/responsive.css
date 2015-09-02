@@ -1,0 +1,135 @@
+@media screen and (max-width: 1300px) {
+	.nav-bar .nav-content {
+		width: 90rem;
+		height: 9rem;
+	} 
+
+	#logo {
+		height: 3.5rem;
+	}
+
+	.main {
+		height: 85rem;
+	}
+
+	.main .main-content {
+		width: 90rem;
+	}
+
+	.main .main-content #jamesHead {
+		width: 50rem;
+	}
+
+	.main .main-content .about {
+		margin-top: 10rem;
+		width: 40rem;
+	}
+
+	.about h4 {
+		margin-top: 3rem;
+	}
+
+	.about h5 {
+		margin-top: 1rem
+	}
+
+	.about p {
+		margin-top: 3rem;
+	}
+
+	.project {
+		width: 30rem;
+		height: 30rem;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	.nav-bar .nav-content {
+		width: 50rem;
+		height: 9rem;
+	} 
+
+	#logo {
+		height: 3.5rem;
+	}
+
+	.main {
+		height: 60rem;
+	}
+
+	.main .main-content {
+		width: 50rem;
+	}
+
+	.main .main-content #jamesHead {
+		display: none;
+	}
+
+	.main .main-content .about {
+		margin: 10rem auto;
+		width: 50rem;
+	}
+
+	.about h3 {
+		text-align: center;
+	}
+
+	.about h4 {
+		margin-top: 3rem;
+	}
+
+	.about h5 {
+		margin-top: 1rem
+	}
+
+	.about p {
+		margin-top: 3rem;
+	}
+
+	.project {
+		width: 30rem;
+		height: 30rem;
+	}
+
+	.contact {
+		margin-top: 5rem;
+		height: 40rem;
+	}
+
+	.contact .contact-container {
+		margin-top: 2rem;
+	}
+
+	.contact-container .contact-icons {
+		margin-top: 10rem;
+	}
+
+	footer {
+		height: 5rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.nav-bar .nav-content {
+		width: 25rem;
+		height: 9rem;
+	} 
+
+	#logo {
+		height: 2.5rem;
+	}
+
+	.main {
+		height: 100rem;
+	}
+
+	.main .main-content {
+		width: 25rem;
+	}
+
+	.main .main-content .about {
+		margin: 10rem auto;
+		width: 25rem;
+	}
+}
